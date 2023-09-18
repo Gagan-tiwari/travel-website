@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ########### Html class styling ######## */
+html{
+    /* font-size: 10px; */
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif
+}
+
+ul li{
+    list-style: none;
+
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+}
+
+
+/* ########### utility class ######### */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-blue{
+    color: rgb(55, 171, 216);
+}
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+.text-grey{
+    color: #555;
+}
+
+.btm{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btm-primary{
+    background-color: white;
+    border-radius: 10em;
+}
+
+.btm-primary:hover{
+    background-color: #365462;
+}
+.btm-secondry{
+    border: 2px solid rgb(60, 162, 202);
+    border-radius: 1.5em;
+    color: rgb(60, 162, 202);
+    background: #fff;
+}
+
+.btm-secondry:hover{
+    background-color: #365462;
+}
+
+.bg-dark{
+    background-color:#354353;
+}
+
+
+
+/* ########## header styling ########## */
+.header{
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url('../img/background.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navbar{
+    padding: 1rem;
+}
+
+
+.navbar .logo{
+    float: left;
+}
+
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar a:hover{
+        border-bottom: 1px solid skyblue;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ###### header contant styling ######### */
+.header-contant h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-contant p{
+    text-transform: uppercase;
+}
+
+.header-contant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+}
+
+/* ############# section showcase styling ############ */
+
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height: 350px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box, .row2 .text-box{
+    width: 50%;
+    float: left;
+}
+
+.row2 .img-box, .row1 .text-box{
+    width: 50%;
+    float: right;
+}
+
+.row .img-box{
+    height: 100%;
+}
+
+.row .text-box{
+    padding: 3rem;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ########## FEATURE SECTION STYLING ######## */
+.features{
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.336);
+}
+
+.box{
+    width: 33.3333333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+}
+
+.box-1, .box-3{
+    background-color: #354353;
+    color: #fff;
+}
+
+.box-2{
+    background-image: linear-gradient(to right, #68a2d4 0%, #65e0e7 100%);
+    color: #fff;
+
+}
+
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ###### Footer Styling ######## */
+.footer{
+    background-color: #354353;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.social-media-links i{
+    margin: 2rem;
+}
+
+/* ########## About page styling ######## */
+
+.about{
+    padding: 5rem 0;
+}
+
+.about-heading::after{
+    content: '';
+    border-bottom: 3px solid rgb(60, 162, 202);;
+    display: block;
+    width: 100%;
+}
+
+/* ########## about Wrapper styling ####### */
+
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+    
+    
+}
+
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}   
+.about-wrapper .right{  
+    float: right;
+    width: 50%;
+
+}
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about-wrapper li::before{
+    content: '\2713';
+    color: #65e0e7;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+
+
+/* ########## count styling ########## */
+.counts{
+    margin-top: 3rem;
+}
+
+.count-item{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+.count-item span{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #65e0e7;
+}
+
+.count-item p{
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+/* ######### banner styling ########### */
+.cta-banner{
+    background:linear-gradient(to right, #68a2d4 0%, #65e0e7 100%);
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px #00000033;
+    margin-top: 3rem;
+}
+
+.cta-banner-left{
+    width: 60%;
+    float: left;
+}
+
+.cta-banner-right{
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+.cta-line{
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 3px solid white;
+    padding: 0.3rem 3.5em;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+
+}
+.cta-banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ####### conatcat page styling # */
+
+.contact-form{
+    padding: 5rem 0;
+    background: #f7f7f7;
+}
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form-wrapper .compnay-address{
+    height: 760px;
+    background-color: #fff;
+    width: 49%;
+    float: left;
+}
+
+.form-wrapper .compnay-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.form-wrapper .compnay-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .compnay-address img{
+    max-width: 95%;
+    min-height: 45rem;
+    object-fit: cover;
+    object-position: right;
+
+}
+
+/* ###### Form styling ##########3 */
+
+.form-wrapper .form{
+    height: 760px;
+    font-size: 1.6rem;
+    width: 49%;
+    float: right; 
+    padding: 1rem; 
+    background: #fff; 
+
+}
+
+.form h1::after{
+    content: '';
+    display: block;
+    border: 3px solid #65e0e7;
+    width: 100%;
+
+}
+
+.form-wrapper label{
+    display: block;
+
+}
+
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+
+}
+
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+
+.form-wrapper .form label::after{
+    content: '* ';
+    color: red;
+}
+
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 3em;
+    font-size: 1.8rem;
+    background: #65e0e7;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+/* ########## media queries ########### */
+@media (max-width: 600px){
+    html{
+        font-size: 50%;
+
+    }
+
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .header-contant h1{
+        display: none;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.5212);
+
+    }
+
+    .features .box-2,
+    .features .box-3{
+        margin-top: 7rem;
+    }
+
+    .box-wrapper{
+        box-shadow: none;
+    }
+
+    .cta-banner-left,
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-wrapper .compnay-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+
+    }
+
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 501px) and (max-width:768px){
+    html{
+        font-size: 50%;
+
+    }
+    p{
+        font-size: 1.8rem;
+    }
+
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.5212);
+
+    }
+
+    .features .box-2,
+    .features .box-3{
+        margin-top: 7rem;
+    }
+
+    .box-wrapper{
+        box-shadow: none;
+    }
+
+    .cta-banner-left,
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-wrapper .compnay-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+
+    }
+
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media(min-width:769px) and (max-width: 1200px){
+    html{
+        font-size: 56.25px;
+    }
+    .row .text-box h2{
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+}
+
+@media(orientation: landscape) and (max-height:500px){
+    .header{
+        height: 90vmax ;
+    }
+}
